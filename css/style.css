@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    border: 0;
+}
+
+header{
+    height: 80px;
+    background-color: #FF8400;
+    padding: 15px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav h1{
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav a:hover{
+    border-bottom: solid white 3px;
+    
+}
+
+
+/*-------------- CEP SECTION - FORM ----------------*/
+
+#cep-section{
+    background-color: black;
+    padding: 40px 15px;
+}
+
+#cep-section form{
+    background-color: #333333;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+#cep-section form input{
+    height: 50px;
+    border-radius: 4px;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+.input-container{
+    margin-bottom: 20px;
+}
+
+#cep-section form input ::placeholder{
+    color:#C9C9C9;
+    font-size: 14px;
+}
+
+#cep-section form button{
+    background-color: #FF8400;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    border-radius: 4px;
+    max-width: 250px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#cep-section form button:hover{
+    background-color: #fc9628;
+}
+
+
+#cep-section form .btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.required-camp{
+    font-size: 14px;
+    color: rgb(247, 161, 161);
+}
+
+
+/*-------------- CEP SECTION - ADDRESS ----------------*/
+
+.address{
+    background-color: #333333;
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 19px;
+    margin-bottom: 20px;
+}
+
+.city{
+    color: #FF8400;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.logradouro{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1px;
+}
+
+.cep-number{
+    font-size: 12px;
+    font-weight: 400;
+    color: #8F8F8F;
+}
+
+
+
+

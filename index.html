@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaCEP practice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>ViaCEP</h1>
+            <a href="https://viacep.com.br/" target="_blank">contato</a>
+        </nav>
+    </header>
+    <section id="cep-section">
+        <form name="cep-form">
+            <div class="input-container">
+                <input name="cep" required type="text" placeholder="CEP">
+                <p class="required-camp">Campo requerido</p>
+            </div>
+            <div class="input-container">
+                <input name="logradouro" type="text" placeholder="Logradouro">
+            </div>
+            <div class="input-container">
+                <input name="numero" required type="text" placeholder="Número">
+                <p class="required-camp">Campo requerido</p>
+            </div>
+            <div class="input-container">
+                <input name="cidade" type="text" placeholder="Cidade">
+            </div>
+            
+            <div class="btn-container">
+                <button>Salvar</button>
+                <button>Limpar</button>
+            </div>
+        </form>
+        <div class="address-container">
+            <div class="address">
+                <h2 class="city">São Paulo</h2>
+                <p class="logradouro">Rua dos jardins, 720</p>
+                <p class="cep-number">11200-345</p>
+            </div>
+            <div class="address">
+                <h2 class="city">São Paulo</h2>
+                <p class="logradouro">Rua dos jardins, 720</p>
+                <p class="cep-number">11200-345</p>
+            </div>
+            <div class="address">
+                <h2 class="city">São Paulo</h2>
+                <p class="logradouro">Rua dos jardins, 720</p>
+                <p class="cep-number">11200-345</p>
+            </div>
+            <div class="address">
+                <h2 class="city">São Paulo</h2>
+                <p class="logradouro">Rua dos jardins, 720</p>
+                <p class="cep-number">11200-345</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
