@@ -1,4 +1,4 @@
-#modal-container{
+.modal-container{
     height: 100%;
     width: 100%;
     position: fixed;
@@ -6,10 +6,9 @@
     top: 0px;
     z-index: 1;
     background-color: rgba(16, 16, 16, 0.723);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
+    display: none;
+    
 }
 
 .modal{
@@ -41,9 +40,13 @@
     height: 50px;
     width: 300px;
     cursor: pointer;
+    font-weight: 700;
 }
 
 
-.modal-container-close{
-    display: none;
+.modal-container-open{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
