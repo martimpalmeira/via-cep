@@ -69,9 +69,13 @@ nav a:hover{
     margin-bottom: 20px;
 }
 
-#cep-section form input ::placeholder{
+#cep-section form input::placeholder{
     color:#C9C9C9;
     font-size: 14px;
+}
+
+#cep-section form input:disabled{
+    background-color: #e8e8e8;
 }
 
 #cep-section form button{

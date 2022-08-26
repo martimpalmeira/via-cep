@@ -1,10 +1,7 @@
-import Address from 'Address.js';
+import * as formController from './controllers/form-controller.js';
+import * as listController from './controllers/list-controller.js';
+import * as modalController from './controllers/modal-controller.js';
 
-const inputCep = document.forms[0].cep;
-
-inputCep.addEventListener('change', handleInputCepChange);
-
-function handleInputCepChange(event){
-    const viaCepEndPoint = `https://viacep.com.br/ws/${event.target.value}/json/`;
-    const address = new Address();
-}
+formController.init();
+listController.init();
+modalController.init();

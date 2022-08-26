@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViaCEP practice</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -16,53 +17,49 @@
             <a href="https://viacep.com.br/" target="_blank">contato</a>
         </nav>
     </header>
-    <section id="cep-section">
-        <form name="cep-form">
-            <div class="input-container">
-                <input name="cep" required type="text" placeholder="CEP">
-                <p class="required-camp">Campo requerido</p>
-            </div>
-            <div class="input-container">
-                <input name="logradouro" type="text" placeholder="Logradouro">
-            </div>
-            <div class="input-container">
-                <input name="numero" required type="text" placeholder="Número">
-                <p class="required-camp">Campo requerido</p>
-            </div>
-            <div class="input-container">
-                <input name="cidade" type="text" placeholder="Cidade">
-            </div>
-            
-            <div class="btn-container">
-                <button>Salvar</button>
-                <button>Limpar</button>
-            </div>
-        </form>
-        <div class="address-container">
-            <div class="address">
-                <h2 class="city">São Paulo</h2>
-                <p class="logradouro">Rua dos jardins, 720</p>
-                <p class="cep-number">11200-345</p>
-            </div>
-            <div class="address">
-                <h2 class="city">São Paulo</h2>
-                <p class="logradouro">Rua dos jardins, 720</p>
-                <p class="cep-number">11200-345</p>
-            </div>
-            <div class="address">
-                <h2 class="city">São Paulo</h2>
-                <p class="logradouro">Rua dos jardins, 720</p>
-                <p class="cep-number">11200-345</p>
-            </div>
-            <div class="address">
-                <h2 class="city">São Paulo</h2>
-                <p class="logradouro">Rua dos jardins, 720</p>
-                <p class="cep-number">11200-345</p>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section id="cep-section">
+            <form name="cepForm">
+                <div class="input-container">
+                    <input name="cep" id="cep" type="text" placeholder="CEP">
+                    <p class="required-camp" data-error="cep"></p>
+                </div>
+                <div class="input-container">
+                    <input name="street" disabled id="street" type="text" placeholder="Logradouro">
+                </div>
+                <div class="input-container">
+                    <input name="number" id="number" type="text" placeholder="Número">
+                    <p class="required-camp" data-error="number"></p>
+                </div>
+                <div class="input-container">
+                    <input name="city" disabled id="city" type="text" placeholder="Cidade">
+                </div>
 
-    <script src="js/script.js"></script>
+                <div class="btn-container">
+                    <button name="btnSave">Salvar</button>
+                    <button name="btnClear">Limpar</button>
+                </div>
+            </form>
+            <div class="address-container">
+                <div class="address">
+                    <h2 class="city">São Paulo</h2>
+                    <p class="logradouro">Rua dos jardins, 720</p>
+                    <p class="cep-number">11200-345</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <section id="modal-container">
+        <div class="modal">
+            <a href="https://www.linkedin.com/in/martimpalmeira/" target="_blank">linkedin.com/in/martimpalmeira/</a>
+            <a href="https://github.com/martimpalmeira" target="_blank">github.com/martimpalmeira</a>
+            <button class="btnCloseModal">Fechar</button>
+        </div>
+    </section> -->
+
+
+
+    <script type="module" src="js/viacep.js"></script>
 </body>
 
 </html>
